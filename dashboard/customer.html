@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="dashboard_wrapper">
+        <aside class="sidebar">
+            <a href="#!" class="close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+            <div class="logo_area">
+                <a href="#!"><img src="../images/logo.png" alt="DayOne Logo" class="logo"></a>
+                <a href="#!"><img src="../images/favicon.png" alt="DayOne Logo" class="logo collapse"></a>
+            </div>
+            <nav class="side_nav">
+                <ul>
+                    <li><a href="../dashboard/dashboard.html">
+                            <img src="./images/dashboard.png" alt="">
+                            <span>Dashboard</span> </a></li>
+                    <li>
+                        <a href="../dashboard/zip-code.html">
+                            <img src="./images/zipcode.png" alt="">
+
+                            <span>Zip Codes</span></a>
+                    </li>
+                    <li class="active"><a href="../dashboard/leads.html">
+                            <img src="./images/lead.png" alt="">
+                            <span>Leads</span></a></li>
+                    <li><a href="../dashboard/customer.html">
+                            <img src="./images/customer.png" alt="">
+                            <span>Customer</span></a></li>
+
+                    <li><a href="#">
+                            <img src="./images/subscribe.png" alt="">
+                            <span>Subscription</span></a></li>
+                    <li><a href="../dashboard/my-account.html">
+                            <img src="./images/user.png" alt="">
+                            <span>My Account</span></a></li>
+                    <li><a href="#">
+                            <img src="./images/logout.png" alt=""><span>Log out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main_content">
+            <header class="top_bar">
+                <div class="user_lft">
+                    <a href="#!" class="collapse"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#!">Home</a>
+
+                </div>
+                <div class="user_profile">
+                    <div class="profile_info">
+                        <img src="./images/user.png" alt="" class="userImg">
+                        <div class="txt">
+                            <span class="name">John Doe</span>
+                            <span>John@mail.com</span>
+                        </div>
+
+                        <a href="#!" class="abs"></a>
+                    </div>
+
+                    <ul class="dropdown_menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="logout.html" class="logout">Log Out</a></li>
+                    </ul>
+
+
+                </div>
+            </header>
+
+            <section class="content_body">
+                <div class="filter_wrapper">
+                    <label for="zip_select">Filter by Zip Code:</label>
+                    <div class="select_custom">
+                        <select id="zip_select" name="zipcode">
+                            <option value="">Select Zip Code</option>
+                            <option value="700091">700091</option>
+                            <option value="700092">700092</option>
+                            <option value="110001">110001</option>
+                            <option value="400001">400001</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table_container">
+                    <table class="custom_table">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Second Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th class="text_center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Johnksehduagwhszgduydga</td>
+                                <td>Doe</td>
+                                <td>
+                                    <div class="copy_wrapper">
+                                        <span class="copy_text">john.doe@example.com</span>
+                                        <button class="copy_btn" data-copy="john.doe@example.com"><i
+                                                class="fa-solid fa-copy"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="copy_wrapper">
+                                        <span class="copy_text">+1 234 567 890</span>
+                                        <button class="copy_btn" data-copy="john.doe@example.com"><i
+                                                class="fa-solid fa-copy"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="action_btns">
+                                        <a href="#" class="btn_view">View</a>
+                                        <a href="#" class="btn_edit">Customer</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Johnksehduagwhszgduydga</td>
+                                <td>Doe</td>
+                                <td>
+                                    <div class="copy_wrapper">
+                                        <span class="copy_text">johnasasa.doe@example.com</span>
+                                        <button class="copy_btn" data-copy="johnasasa.doe@example.com"><i
+                                                class="fa-solid fa-copy"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="copy_wrapper">
+                                        <span class="copy_text">+1 23111190</span>
+                                        <button class="copy_btn" data-copy="+1 23111190"><i
+                                                class="fa-solid fa-copy"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="action_btns">
+                                        <a href="#" class="btn_view">View</a>
+                                        <a href="#" class="btn_edit">Customer</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <footer class="footer_copy">
+                <p>&copy; 2026 Fortmindz. All rights reserved.</p>
+            </footer>
+        </main>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="../dashboard/js/dashboard.js"></script>
+
+</html>

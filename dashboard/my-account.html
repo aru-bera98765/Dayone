@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/svg" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="dashboard_wrapper">
+        <aside class="sidebar">
+            <a href="#!" class="close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+            <div class="logo_area">
+                <a href="#!"><img src="../images/logo.png" alt="DayOne Logo" class="logo"></a>
+                <a href="#!"><img src="../images/favicon.png" alt="DayOne Logo" class="logo collapse"></a>
+            </div>
+            <nav class="side_nav">
+                <ul>
+                    <li><a href="../dashboard/dashboard.html">
+                            <img src="./images/dashboard.png" alt="">
+                            <span>Dashboard</span> </a></li>
+                    <li>
+                        <a href="../dashboard/zip-code.html">
+                            <img src="./images/zipcode.png" alt="">
+
+                            <span>Zip Codes</span></a>
+                    </li>
+                    <li class="active"><a href="../dashboard/leads.html">
+                            <img src="./images/lead.png" alt="">
+                            <span>Leads</span></a></li>
+                    <li><a href="../dashboard/customer.html">
+                            <img src="./images/customer.png" alt="">
+                            <span>Customer</span></a></li>
+
+                    <li><a href="#">
+                            <img src="./images/subscribe.png" alt="">
+                            <span>Subscription</span></a></li>
+                    <li><a href="../dashboard/my-account.html">
+                            <img src="./images/user.png" alt="">
+                            <span>My Account</span></a></li>
+                    <li><a href="#">
+                            <img src="./images/logout.png" alt=""><span>Log out</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main_content">
+            <header class="top_bar">
+                <div class="user_lft">
+                    <a href="#!" class="collapse"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#!">Home</a>
+
+                </div>
+                <div class="user_profile">
+                    <div class="profile_info">
+                        <img src="./images/user.png" alt="" class="userImg">
+                        <div class="txt">
+                            <span class="name">John Doe</span>
+                            <span>John@mail.com</span>
+                        </div>
+
+                        <a href="#!" class="abs"></a>
+                    </div>
+
+                    <ul class="dropdown_menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="logout.html" class="logout">Log Out</a></li>
+                    </ul>
+
+
+                </div>
+            </header>
+
+            <section class="content_body">
+
+                <div class="account_container">
+                    <div class="form_header">
+                        <h3>My Account</h3>
+                        <p>Update your personal information and profile details.</p>
+                    </div>
+
+                    <form class="account_form">
+                        <div class="form_row">
+                            <div class="form_group w-50">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter first name" value="John">
+                            </div>
+                            <div class="form_group w-50">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter last name" value="Doe">
+                            </div>
+
+
+                            <div class="form_group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="form_group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Phone Number">
+                            </div>
+
+                            <div class="form_group">
+                                <label>Referal Id</label>
+                                <input type="text" placeholder="Referal Id">
+                            </div>
+                            <div class="form_group full_width">
+                                <label> Description</label>
+                                <textarea placeholder="Write a short bio..."></textarea>
+                            </div>
+
+                        </div>
+                        <div class="form_header password_header">
+                            <h3>Change Password</h3>
+                            <p>Ensure your account is using a long, random password to stay secure.</p>
+                        </div>
+
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label>Current Password</label>
+                                <div class="input_wrapper">
+                                    <input type="password" class="pass_input" placeholder="Enter current password">
+                                    <span class="toggle_view"><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <label>New Password</label>
+                                <div class="input_wrapper">
+                                    <input type="password" class="pass_input" placeholder="Enter new password">
+                                    <span class="toggle_view"><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <label>Confirm Password</label>
+                                <div class="input_wrapper">
+                                    <input type="password" class="pass_input" placeholder="Confirm new password">
+                                    <span class="toggle_view"><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_actions">
+                            <input type="submit" class="glb_btn" value="Save Changes">
+                            <input type="submit" class="glb_btn white" value="Cancel">
+
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+            <footer class="footer_copy">
+                <p>&copy; 2026 Fortmindz. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="../dashboard/js/dashboard.js"></script>
+
+</html>
